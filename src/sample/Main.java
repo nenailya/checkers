@@ -14,8 +14,6 @@ public class Main extends Application {
         primaryStage.setTitle("Checkers");
         primaryStage.setScene(new Scene(root, 400, 401));
         primaryStage.show();
-
-
     }
 
     public static void main(String[] args) {
