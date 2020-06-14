@@ -22,8 +22,6 @@ public class Controller {
     @FXML
     ImageView cell1;
 
-
-
     public void cell1() { fooForEachCell(0, 1);updateUI(); }
     public void cell2() { fooForEachCell(0, 3);updateUI(); }
     public void cell3() { fooForEachCell(0, 5);updateUI(); }
@@ -61,7 +59,6 @@ public class Controller {
        for(Node n : gridPane.getChildren()){
            ImageView img = (ImageView) n;
            img.setImage(images.get(smth.array[GridPane.getRowIndex(n)][GridPane.getColumnIndex(n)]));
-
         }
     }
 
@@ -82,13 +79,7 @@ public class Controller {
         }
     }
 
-
-
     Map<Integer, Image> images = new HashMap<>();
-
-
-
-
 
 }
 
