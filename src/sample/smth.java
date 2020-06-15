@@ -62,10 +62,10 @@ public static int[][] array;
         if (colorOfChecker == 2 && player == 1) {}
         if (colorOfChecker == 11 && player == 2) {}
         if (colorOfChecker == 12 && player == 1) {}
-        if (colorOfChecker == 1 && player == 1 && !whiteCanKillCheck(x, y)) {fooForYellowCellsDeleting();fooForWhiteYellowCellsDeleting();}
-        if (colorOfChecker == 2 && player == 2 && !blackCanKillCheck(x, y)) {fooForYellowCellsDeleting();fooForBlackYellowCellsDeleting();}
-        if (colorOfChecker == 11 && player == 1 && !whiteCanKillCheck(x, y)) {fooForYellowCellsDeleting();fooForWhiteYellowCellsDeleting();}
-        if (colorOfChecker == 12 && player == 2 && !blackCanKillCheck(x, y)) {fooForYellowCellsDeleting();fooForBlackYellowCellsDeleting();}
+        if (colorOfChecker == 1 && player == 1 && !whiteCanKillCheck(x, y)) {fooForYellowCellsDeleting(); fooForWhiteYellowCellsDeleting();}
+        if (colorOfChecker == 2 && player == 2 && !blackCanKillCheck(x, y)) {fooForYellowCellsDeleting(); fooForBlackYellowCellsDeleting();}
+        if (colorOfChecker == 11 && player == 1 && !whiteCanKillCheck(x, y)) {fooForYellowCellsDeleting(); fooForWhiteYellowCellsDeleting();}
+        if (colorOfChecker == 12 && player == 2 && !blackCanKillCheck(x, y)) {fooForYellowCellsDeleting(); fooForBlackYellowCellsDeleting();}
 
         if (colorOfChecker == 10) {
             if(checkForMinus1(x) && checkForMinus1(y) && array[x-1][y-1] == 81) { array[x][y] = 1; array[x-1][y-1] = 0; whiteKingCheck(x, y); fooForYellowCellsDeleting();fooForWhiteYellowCellsDeleting(); player = 2;}
@@ -99,9 +99,9 @@ public static int[][] array;
             if(checkForPlus2(x) && checkForPlus2(y)   && array[x+2][y+2] == 812){ array[x+2][y+2] = 0; array[x+1][y+1] = 0; array[x][y] = 12; fooForYellowCellsDeleting();fooForBlackYellowCellsDeleting(); player = 1;}////исправь////////
         }
 
-        if(colorOfChecker == 81) { fooForYellowCellsDeleting();fooForWhiteYellowCellsDeleting(); fooFor1(x, y);}
+        if(colorOfChecker == 81) { fooForYellowCellsDeleting(); fooForWhiteYellowCellsDeleting(); fooFor1(x, y);}
         if(colorOfChecker == 82) { fooForYellowCellsDeleting(); fooFor2(x, y);}
-        if(colorOfChecker == 811) { fooForYellowCellsDeleting();fooForWhiteYellowCellsDeleting(); fooFor11(x, y);}
+        if(colorOfChecker == 811) { fooForYellowCellsDeleting(); fooForWhiteYellowCellsDeleting(); fooFor11(x, y);}
         if(colorOfChecker == 812) { fooForYellowCellsDeleting(); fooFor12(x, y);}
     }
 
@@ -248,6 +248,7 @@ public static int[][] array;
             return k > 0;
         else return true;
     }
+
 
 
 }

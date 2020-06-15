@@ -14,7 +14,8 @@ import java.io.FileNotFoundException;
 import java.util.HashMap;
 import java.util.Map;
 
-import static sample.smth.fooForEachCell;
+import static sample.smth.*;
+
 
 public class Controller {
     @FXML
