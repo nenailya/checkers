@@ -8,7 +8,7 @@ public static int[][] array;
     static int aa = -1;
     static int bb = -1;
 
-    static void fooForEachCell(int x, int y) {
+    public static void fooForEachCell(int x, int y) {
 
 
         int colorOfChecker = array[x][y];
